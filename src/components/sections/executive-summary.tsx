@@ -17,6 +17,14 @@ export default function ExecutiveSummary() {
         className="absolute inset-0 opacity-[0.04] [background-image:linear-gradient(rgba(255,255,255,.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.1)_1px,transparent_1px)] [background-size:60px_60px]"
       />
       <div className="relative mx-auto max-w-6xl px-6 md:px-10">
+        <div className="mb-10">
+          <span className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+            Arena<span className="text-[#F59E0B]">Mobile</span>
+          </span>
+          <span className="ml-4 text-sm font-medium text-slate-400">
+            Content MVNO Proposal
+          </span>
+        </div>
         <div className="flex items-center gap-2">
           <span className="inline-block h-1.5 w-6 rounded-full bg-[#F59E0B]" />
           <p className="text-xs font-medium uppercase tracking-[0.24em] text-[#F59E0B]">

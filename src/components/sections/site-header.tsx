@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContactDialog from "@/components/contact-dialog";
 
 const NAV = [
@@ -14,16 +15,26 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-10">
         <a href="/" className="flex items-center gap-3 text-[#0F172A]">
-          <span className="text-lg font-bold tracking-tight">
-            Arena<span className="text-[#B91C1C]">Mobile</span>
-          </span>
+          <Image
+            src="/images/mvne-logo.png"
+            alt="MVNE"
+            width={600}
+            height={236}
+            priority
+            className="h-9 w-auto"
+          />
           <span
             aria-hidden
             className="hidden h-8 w-px bg-slate-200 sm:block"
           />
-          <span className="hidden text-xs font-medium text-slate-500 sm:block">
-            Content MVNO Proposal
-          </span>
+          <Image
+            src="/images/dsg-proud-member.png"
+            alt="Proud member of DSG"
+            width={964}
+            height={620}
+            priority
+            className="hidden h-9 w-auto sm:block"
+          />
         </a>
         <nav className="hidden items-center gap-6 lg:flex">
           {NAV.map((n) => (
