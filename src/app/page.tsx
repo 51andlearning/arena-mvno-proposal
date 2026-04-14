@@ -3,8 +3,10 @@ import ExecutiveSummary from "@/components/sections/executive-summary";
 import ContentArsenal from "@/components/sections/content-arsenal";
 import ProductTiers from "@/components/sections/product-tiers";
 import GalloMusic from "@/components/sections/gallo-music";
+import VasServices from "@/components/sections/vas-services";
 import PropertyMap from "@/components/sections/property-map";
 import RevenueModel from "@/components/sections/revenue-model";
+import DsgEcosystem from "@/components/sections/dsg-ecosystem";
 import Cta from "@/components/sections/cta";
 
 export default function Home() {
@@ -16,8 +18,10 @@ export default function Home() {
         <ContentArsenal />
         <ProductTiers />
         <GalloMusic />
+        <VasServices />
         <PropertyMap />
         <RevenueModel />
+        <DsgEcosystem />
         <Cta />
       </main>
     </>

@@ -282,6 +282,128 @@ export const revenueModel = {
   },
 };
 
+export const vasServices = {
+  eyebrow: "Value-Added Services",
+  title: "Beyond connectivity — stacked revenue opportunities",
+  subtitle:
+    "Layer VAS on top of the core MVNO to increase ARPU, reduce churn, and create new revenue streams unique to the Arena ecosystem.",
+  items: [
+    {
+      icon: "✈️",
+      title: "eSIM & Travel Roaming",
+      body: "Branded travel eSIM for Arena subscribers heading abroad — earn on roaming without MNO dependency.",
+      badges: ["New Revenue", "Differentiation"],
+    },
+    {
+      icon: "🎁",
+      title: "Loyalty & Cashback",
+      body: "Loyalty points earned on spend, redeemable against Arena Events tickets, Gallo merchandise, and partner offers.",
+      badges: ["Retention", "Stickiness"],
+    },
+    {
+      icon: "🎵",
+      title: "Gallo Music Streaming",
+      body: "Zero-rated Gallo catalogue streaming — a curated African heritage music experience exclusive to subscribers.",
+      badges: ["Differentiation", "Stickiness"],
+    },
+    {
+      icon: "📰",
+      title: "Premium News Bundles",
+      body: "BusinessLIVE and Financial Mail digital subscriptions bundled at a discount for Arena Plus and Arena Black tiers.",
+      badges: ["New Revenue", "Higher Margins"],
+    },
+    {
+      icon: "🛡️",
+      title: "Cybersecurity & Parental Protection",
+      body: "Bitdefender mobile security, identity protection, and parental controls bundled with connectivity.",
+      badges: ["New Revenue", "Stickiness"],
+    },
+    {
+      icon: "🔐",
+      title: "Cyber Insurance",
+      body: "Micro-insurance products protecting subscribers against identity theft and online fraud.",
+      badges: ["New Revenue", "Higher Margins"],
+    },
+    {
+      icon: "📺",
+      title: "Entertainment Bundles",
+      body: "Business Day TV, Ignition, and The Home Channel streaming packages — zero-rated for premium subscribers.",
+      badges: ["Retention", "Differentiation"],
+    },
+    {
+      icon: "💼",
+      title: "SME Tools",
+      body: "Cloud storage, email security, and business productivity tools for Business Day segment subscribers.",
+      badges: ["New Revenue", "Higher Margins"],
+    },
+  ],
+};
+
+export const dsgEcosystem = {
+  eyebrow: "The DSG Difference",
+  title: "A full ecosystem behind the MVNO",
+  subtitle:
+    "Arena doesn't build this alone. The DSG group provides end-to-end capabilities across telecoms enablement, customer experience, marketing, and digital resilience.",
+  capabilities: [
+    {
+      name: "MVNE",
+      description: "End-to-end MVNO enablement — SIM provisioning, network integration, billing, customer management, and VAS platform.",
+      badges: ["Telecoms", "Core Platform"],
+    },
+    {
+      name: "CXG",
+      description: "Digital experience and contact centre support integrated into Arena's existing CX stack — onboarding, support, retention.",
+      badges: ["Customer Experience"],
+    },
+    {
+      name: "Broadbrand",
+      description: "Customer value management, retention, upsell, churn defence, and data-driven marketing across the subscriber base.",
+      badges: ["Marketing", "Retention"],
+    },
+    {
+      name: "Digital Resilience",
+      description: "Cybersecurity, identity protection, and digital safety products — bundled as VAS or sold standalone.",
+      badges: ["Security", "VAS"],
+    },
+    {
+      name: "eInsurer",
+      description: "Micro-insurance and embedded insurance products distributed through the mobile platform.",
+      badges: ["Insurance", "VAS"],
+    },
+    {
+      name: "PersAIc",
+      description: "AI-powered segmentation and personalisation — targeted offers, content recommendations, and engagement triggers.",
+      badges: ["AI", "Personalisation"],
+    },
+  ],
+  partners: [
+    {
+      name: "MTN",
+      description: "Mobile network operator — host network for MVNO connectivity and infrastructure.",
+    },
+    {
+      name: "NetEngage",
+      description: "BSS/OSS platform — billing, provisioning, and subscriber management.",
+    },
+    {
+      name: "Globetom",
+      description: "API gateway and digital enablement — connecting VAS partners to the MVNO platform.",
+    },
+    {
+      name: "Flolive",
+      description: "Global eSIM and IoT connectivity — powering travel eSIM and roaming solutions.",
+    },
+    {
+      name: "Lumine Group",
+      description: "Vertical market software — telecoms-specific solutions and integrations.",
+    },
+    {
+      name: "Pharos Avantgard",
+      description: "Revenue assurance and fraud management — protecting subscriber revenue streams.",
+    },
+  ],
+};
+
 export const cta = {
   eyebrow: "Next Steps",
   title: "Ready to build Africa's first content-led MVNO?",
