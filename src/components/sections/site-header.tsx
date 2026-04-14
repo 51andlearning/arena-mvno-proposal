@@ -1,0 +1,47 @@
+import ContactDialog from "@/components/contact-dialog";
+
+const NAV = [
+  { label: "Executive Summary", href: "#executive-summary" },
+  { label: "Content Arsenal", href: "#content-arsenal" },
+  { label: "Product Tiers", href: "#product-tiers" },
+  { label: "Gallo Music", href: "#gallo-music" },
+  { label: "Revenue Model", href: "#revenue-model" },
+  { label: "Next Steps", href: "#next-steps" },
+];
+
+export default function SiteHeader() {
+  return (
+    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/85 backdrop-blur">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-10">
+        <a href="/" className="flex items-center gap-3 text-[#0F172A]">
+          <span className="text-lg font-bold tracking-tight">
+            Arena<span className="text-[#B91C1C]">Mobile</span>
+          </span>
+          <span
+            aria-hidden
+            className="hidden h-8 w-px bg-slate-200 sm:block"
+          />
+          <span className="hidden text-xs font-medium text-slate-500 sm:block">
+            Content MVNO Proposal
+          </span>
+        </a>
+        <nav className="hidden items-center gap-6 lg:flex">
+          {NAV.map((n) => (
+            <a
+              key={n.href}
+              href={n.href}
+              className="text-sm text-slate-600 transition hover:text-[#B91C1C]"
+            >
+              {n.label}
+            </a>
+          ))}
+        </nav>
+        <ContactDialog
+          label="Get in touch"
+          showIcon={false}
+          className="inline-flex items-center rounded-full bg-[#B91C1C] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#991B1B]"
+        />
+      </div>
+    </header>
+  );
+}
