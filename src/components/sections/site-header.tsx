@@ -8,13 +8,13 @@ const NAV = [
   { label: "Ecosystem", href: "#dsg-ecosystem" },
   { label: "Operating Model", href: "#operating-model" },
   { label: "Journey", href: "#delivery-journey" },
-  { label: "Roadmap", href: "#roadmap" },
   { label: "Capabilities", href: "#capabilities" },
   { label: "GTM", href: "#gtm-enablement" },
   { label: "Bundles", href: "#product-tiers" },
   { label: "Gallo", href: "#gallo-music" },
   { label: "VAS", href: "#vas-services" },
   { label: "Revenue", href: "#revenue-model" },
+  { label: "Roadmap", href: "#roadmap" },
   { label: "Next Steps", href: "#next-steps" },
 ];
 

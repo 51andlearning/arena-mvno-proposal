@@ -5,13 +5,13 @@ import PropertyMap from "@/components/sections/property-map";
 import DsgEcosystem from "@/components/sections/dsg-ecosystem";
 import OperatingModel from "@/components/sections/operating-model";
 import DeliveryJourney from "@/components/sections/delivery-journey";
-import ImplementationRoadmap from "@/components/sections/implementation-roadmap";
 import PlatformCapabilities from "@/components/sections/platform-capabilities";
 import GtmEnablement from "@/components/sections/gtm-enablement";
 import ProductTiers from "@/components/sections/product-tiers";
 import GalloMusic from "@/components/sections/gallo-music";
 import VasServices from "@/components/sections/vas-services";
 import RevenueModel from "@/components/sections/revenue-model";
+import ImplementationRoadmap from "@/components/sections/implementation-roadmap";
 import Cta from "@/components/sections/cta";
 
 export default function Home() {
@@ -28,7 +28,6 @@ export default function Home() {
         <DsgEcosystem />
         <OperatingModel />
         <DeliveryJourney />
-        <ImplementationRoadmap />
         <PlatformCapabilities />
         <GtmEnablement />
 
@@ -38,7 +37,8 @@ export default function Home() {
         <VasServices />
         <RevenueModel />
 
-        {/* Next steps */}
+        {/* Delivery timeline + next steps */}
+        <ImplementationRoadmap />
         <Cta />
       </main>
     </>
