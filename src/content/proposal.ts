@@ -626,7 +626,7 @@ export const deliveryJourney = {
   eyebrow: "Delivery Journey",
   title: "The proven MVNO lifecycle — end to end.",
   subtitle:
-    "Digital Mobile provides the full MVNO value chain under one roof: from initial opportunity assessment through commercial launch. Every stage has been delivered live across 8 African territories.",
+    "Digital Mobile provides the full MVNO value chain under one roof: from initial opportunity assessment through commercial launch. Every stage has been delivered live.",
   stages: [
     {
       step: "01",
