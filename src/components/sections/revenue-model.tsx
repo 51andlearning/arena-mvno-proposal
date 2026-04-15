@@ -76,43 +76,165 @@ export default function RevenueModel() {
 
         {/* Flywheel */}
         <div className="mt-16 rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur md:p-10">
-          <h3 className="text-xs font-medium uppercase tracking-[0.24em] text-[#F59E0B]">
-            Customer Value Flywheel
-          </h3>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            {revenueModel.flywheel.map((step, i) => (
-              <span key={step} className="flex items-center gap-3">
-                <span className="rounded-full border border-white/15 bg-white/[0.04] px-4 py-2 text-sm text-slate-200">
-                  {step}
-                </span>
-                {i < revenueModel.flywheel.length - 1 && (
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-4 w-4 shrink-0 text-[#F59E0B]"
-                  >
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
-                )}
-              </span>
-            ))}
+          <div className="flex items-center gap-2">
+            <span className="inline-block h-1.5 w-6 rounded-full bg-[#F59E0B]" />
+            <h3 className="text-xs font-medium uppercase tracking-[0.24em] text-[#F59E0B]">
+              Customer Value Flywheel
+            </h3>
+          </div>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-300">
+            Each turn of the wheel makes the next one faster. Five self-reinforcing stages
+            compound together — content drives engagement, engagement earns rewards,
+            rewards drive usage, usage generates revenue, revenue-funded data improves
+            targeting, which drives more relevant content.
+          </p>
+
+          {/* Desktop: circular flywheel */}
+          <div className="relative mx-auto mt-12 hidden aspect-square w-full max-w-[560px] md:block">
+            {/* Dashed ring + directional arrow markers */}
             <svg
-              viewBox="0 0 24 24"
+              className="absolute inset-0 h-full w-full overflow-visible"
+              viewBox="0 0 600 600"
               fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-5 w-5 text-[#F59E0B]"
+              aria-hidden
             >
-              <polyline points="1 4 1 10 7 10" />
-              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+              <defs>
+                <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.4" />
+                  <stop offset="60%" stopColor="#B91C1C" stopOpacity="0.2" />
+                  <stop offset="100%" stopColor="#0F172A" stopOpacity="0" />
+                </radialGradient>
+              </defs>
+
+              {/* Hub glow */}
+              <circle cx="300" cy="300" r="200" fill="url(#hubGlow)" />
+
+              {/* Dashed ring */}
+              <circle
+                cx="300"
+                cy="300"
+                r="230"
+                stroke="#F59E0B"
+                strokeWidth="2"
+                strokeDasharray="6 10"
+                opacity="0.5"
+              />
+
+              {/* Directional clockwise arrows between steps (5 arrows at 36° offsets) */}
+              {[36, 108, 180, 252, 324].map((angle) => {
+                const rad = ((angle - 90) * Math.PI) / 180;
+                const x = 300 + Math.cos(rad) * 230;
+                const y = 300 + Math.sin(rad) * 230;
+                return (
+                  <g
+                    key={angle}
+                    transform={`translate(${x} ${y}) rotate(${angle})`}
+                  >
+                    <path
+                      d="M -10 0 L 10 0 M 3 -7 L 10 0 L 3 7"
+                      stroke="#F59E0B"
+                      strokeWidth="2.5"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </g>
+                );
+              })}
             </svg>
+
+            {/* Center hub */}
+            <div className="absolute left-1/2 top-1/2 flex h-[32%] w-[32%] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border-2 border-[#F59E0B]/50 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] shadow-[0_0_40px_-4px_rgba(245,158,11,0.4)] backdrop-blur">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-10 w-10 text-[#F59E0B]"
+              >
+                <polyline points="23 4 23 10 17 10" />
+                <polyline points="1 20 1 14 7 14" />
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+              </svg>
+              <div className="mt-2 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-[#F59E0B]">
+                Arena
+              </div>
+              <div className="text-center text-[10px] text-slate-300">
+                Virtuous cycle
+              </div>
+            </div>
+
+            {/* 5 step pills around the circle */}
+            {revenueModel.flywheel.map((step, i) => {
+              const angle = -90 + i * 72;
+              const rad = (angle * Math.PI) / 180;
+              const r = 40; // radius as % of container half-width
+              const x = 50 + Math.cos(rad) * r;
+              const y = 50 + Math.sin(rad) * r;
+              return (
+                <div
+                  key={step}
+                  className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+                  style={{ left: `${x}%`, top: `${y}%` }}
+                >
+                  <div className="flex items-center gap-2.5 rounded-full border border-[#F59E0B]/40 bg-[#0F172A] px-3 py-2 shadow-[0_8px_24px_-6px_rgba(245,158,11,0.35)]">
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#F59E0B] text-[11px] font-bold text-[#0F172A]">
+                      {i + 1}
+                    </span>
+                    <span className="whitespace-nowrap text-xs font-medium text-white">
+                      {step}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Mobile fallback: vertical flow */}
+          <div className="mt-8 space-y-3 md:hidden">
+            {revenueModel.flywheel.map((step, i) => (
+              <div key={step}>
+                <div className="flex items-center gap-3 rounded-full border border-[#F59E0B]/40 bg-[#0F172A] px-3 py-2">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#F59E0B] text-xs font-bold text-[#0F172A]">
+                    {i + 1}
+                  </span>
+                  <span className="text-sm font-medium text-white">{step}</span>
+                </div>
+                {i < revenueModel.flywheel.length - 1 && (
+                  <div className="ml-3.5 flex h-4 items-center">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-3 w-3 text-[#F59E0B]"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <polyline points="19 12 12 19 5 12" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            ))}
+            <div className="flex items-center gap-2 pt-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#F59E0B]">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
+              >
+                <polyline points="1 4 1 10 7 10" />
+                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+              </svg>
+              Loops back to start
+            </div>
           </div>
         </div>
 
