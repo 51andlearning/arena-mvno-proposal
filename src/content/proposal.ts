@@ -577,7 +577,7 @@ export const operatingModel = {
 
 export const trackRecord = {
   eyebrow: "Track Record",
-  title: "13 years. 6 countries. 100% MVNO launch success rate.",
+  title: "13 years MVNO development experience.",
   subtitle:
     "Digital Mobile / DSG has enabled MVNOs and managed services for some of South Africa's most recognisable brands. The platform, partnerships, and playbook are proven.",
   stats: [
