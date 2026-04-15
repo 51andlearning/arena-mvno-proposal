@@ -14,6 +14,7 @@ const NAV = [
   { label: "Gallo", href: "#gallo-music" },
   { label: "VAS", href: "#vas-services" },
   { label: "Revenue", href: "#revenue-model" },
+  { label: "Commercials", href: "#commercial-model" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "Next Steps", href: "#next-steps" },
 ];

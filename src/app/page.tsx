@@ -11,6 +11,7 @@ import ProductTiers from "@/components/sections/product-tiers";
 import GalloMusic from "@/components/sections/gallo-music";
 import VasServices from "@/components/sections/vas-services";
 import RevenueModel from "@/components/sections/revenue-model";
+import CommercialModel from "@/components/sections/commercial-model";
 import ImplementationRoadmap from "@/components/sections/implementation-roadmap";
 import Cta from "@/components/sections/cta";
 
@@ -37,7 +38,8 @@ export default function Home() {
         <VasServices />
         <RevenueModel />
 
-        {/* Delivery timeline + next steps */}
+        {/* Commercials, timeline + next steps */}
+        <CommercialModel />
         <ImplementationRoadmap />
         <Cta />
       </main>
