@@ -141,7 +141,7 @@ export default function OperatingModel() {
           <h3 className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
             Proven MVNO Launches
           </h3>
-          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
             {trackRecord.mvnoLaunches.map((m) => (
               <div
                 key={m.name}

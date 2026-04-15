@@ -597,11 +597,6 @@ export const trackRecord = {
       description: "Enterprise connectivity MVNO serving the agricultural community, with custom PWA enhancements.",
     },
     {
-      name: "eMobile",
-      type: "Digital-first MVNO",
-      description: "Data-led MVNO with integrated eSIM and travel connectivity.",
-    },
-    {
       name: "Digital Mobile",
       type: "DSG's own MVNO (MVNO Light)",
       description: "The reference platform Arena would deploy against — already live, already proven.",
