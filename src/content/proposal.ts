@@ -986,7 +986,7 @@ export const cta = {
   },
   secondary: {
     label: "Download the deck",
-    href: "/downloads/Arena-MVNO-Executive-Deck-v2.pptx",
+    href: "/downloads/Arena-MVNO-Executive-Deck.pptx",
   },
   workstreams: [
     "Content licensing agreement (Gallo/Arena ↔ MVNO entity)",

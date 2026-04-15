@@ -48,7 +48,7 @@ export default function Cta() {
           <ContactDialog label={cta.primary.label} />
           <a
             href={cta.secondary.href}
-            download="Arena-MVNO-Executive-Deck-v2.pptx"
+            download="Arena-MVNO-Executive-Deck.pptx"
             className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-transparent px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
           >
             {cta.secondary.label}
