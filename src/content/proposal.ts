@@ -628,6 +628,148 @@ export const trackRecord = {
   ],
 };
 
+export const deliveryJourney = {
+  eyebrow: "Delivery Journey",
+  title: "The proven MVNO lifecycle — end to end.",
+  subtitle:
+    "Digital Mobile provides the full MVNO value chain under one roof: from initial opportunity assessment through commercial launch. Every stage has been delivered live across 8 African territories.",
+  stages: [
+    {
+      step: "01",
+      title: "MVNO Opportunity",
+      description: "Strategy, market sizing, customer value proposition design, and audience segmentation.",
+    },
+    {
+      step: "02",
+      title: "Commercial Viability",
+      description: "Full financial modelling, ARPU and churn forecasting, commercial structure, and risk allocation.",
+    },
+    {
+      step: "03",
+      title: "Design & Scoping",
+      description: "Technical architecture, product catalogue, customer journeys, integration design, and SLAs.",
+    },
+    {
+      step: "04",
+      title: "Build, SIT & UAT",
+      description: "Platform configuration, API integration, system integration testing, and user acceptance testing.",
+    },
+    {
+      step: "05",
+      title: "Soft Launch",
+      description: "Pilot rollout with controlled subscriber base, performance monitoring, and iteration.",
+    },
+    {
+      step: "06",
+      title: "Commercial Launch",
+      description: "Full market launch across all Arena channels with 24/7 operations and continuous CVM optimisation.",
+    },
+  ],
+  footprint: {
+    title: "Pan-African delivery footprint",
+    subtitle: "MVNE has delivered projects in 8 African territories, supporting Financial Services Providers, Broadcasters, ISPs, and Retailers.",
+    stats: [
+      { value: "8", label: "African territories delivered" },
+      { value: "4", label: "Sectors served" },
+      { value: "#1", label: "Listed group client in Mauritius" },
+      { value: "100%", label: "MVNO launch success" },
+    ],
+    sectors: [
+      {
+        name: "Broadcasters",
+        examples: "DStv Internet (MultiChoice), major broadcaster projects",
+      },
+      {
+        name: "Financial Services",
+        examples: "Multiple FSP projects across SA and the continent",
+      },
+      {
+        name: "ISPs",
+        examples: "Connectivity resellers and tier-2 ISPs",
+      },
+      {
+        name: "Retailers & Agri",
+        examples: "AFGRI Connect, retail-led MVNOs, loyalty ecosystems",
+      },
+    ],
+  },
+};
+
+export const gtmEnablement = {
+  eyebrow: "Go-to-Market Enablement",
+  title: "A proven sales & marketing enablement program.",
+  subtitle:
+    "From brand kick-off through market launch and quarterly review. DSG's Broadbrand unit runs this program end-to-end — Arena keeps brand control, Digital Mobile ensures execution discipline.",
+  phases: [
+    {
+      phase: "Kick-off",
+      focus: "Background, KPIs & Resources",
+      activities: [
+        "Business objectives & market context download",
+        "Agreement on KPIs and required resources",
+        "Staffing and agency requirements",
+        "Core audience definition and segmentation",
+        "Geographic focus and trade visit",
+      ],
+    },
+    {
+      phase: "Strategy Development",
+      focus: "Positioning, Narrative & Marketing Strategy",
+      activities: [
+        "Brand positioning, proposition, and purpose",
+        "Consumer-facing comms idea",
+        "Defined purchase pathway and channel selection",
+        "Marketing objectives across the 4 Ps",
+        "Tasks by audience across pathway and time",
+      ],
+    },
+    {
+      phase: "Activation Development",
+      focus: "Brand, Trade, Performance & CRM",
+      activities: [
+        "Brand activation plan and creative delivery",
+        "Trade marketing and retailer comms strategy",
+        "SEO/SEM, affiliate, and display setup",
+        "CRM tech stack, resourcing, and governance",
+        "Agency selection and decisioning framework",
+      ],
+    },
+    {
+      phase: "Execute & Learn",
+      focus: "Measurement & Iteration",
+      activities: [
+        "Holistic measurement framework",
+        "Recommendation on required data streams",
+        "Final plan development and executional briefs",
+        "Output feedback to the data model",
+        "Quarterly brand reviews and iteration",
+      ],
+    },
+  ],
+  supportingServices: [
+    {
+      icon: "📦",
+      title: "Supply Chain & 4PL (Ufreight)",
+      description: "Since 1998, DSG has run 4PL supply chain for major SA brands. Device sourcing, bonded warehousing, last-mile delivery, and full RICA closed-loop compliance.",
+    },
+    {
+      icon: "🔐",
+      title: "Identity Management (Optional.me)",
+      description: "Partnership with TransUnion and Contactable (the RICA platform MTN uses). Rapid digital onboarding, consent management, and POPIA-compliant permission marketing.",
+    },
+    {
+      icon: "🛒",
+      title: "Omni-Channel Commerce (DigitalMall)",
+      description: "Full Omni-Channel commerce solution integrated with the MVNO platform — device financing, airtime top-up, VAS upsell, and loyalty redemption in one storefront.",
+    },
+    {
+      icon: "🤖",
+      title: "AI Marketing (PersAIc + Xanite)",
+      description: "AI-powered persona targeting, dynamic creative optimisation, and full CVM engine — campaigns, journeys, segmentation, and personalisation at scale.",
+    },
+  ],
+};
+
 export const implementationRoadmap = {
   eyebrow: "Implementation Roadmap",
   title: "From signature to service launch in 16 weeks.",

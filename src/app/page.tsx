@@ -8,8 +8,10 @@ import PropertyMap from "@/components/sections/property-map";
 import RevenueModel from "@/components/sections/revenue-model";
 import DsgEcosystem from "@/components/sections/dsg-ecosystem";
 import OperatingModel from "@/components/sections/operating-model";
+import DeliveryJourney from "@/components/sections/delivery-journey";
 import ImplementationRoadmap from "@/components/sections/implementation-roadmap";
 import PlatformCapabilities from "@/components/sections/platform-capabilities";
+import GtmEnablement from "@/components/sections/gtm-enablement";
 import Cta from "@/components/sections/cta";
 
 export default function Home() {
@@ -26,8 +28,10 @@ export default function Home() {
         <RevenueModel />
         <DsgEcosystem />
         <OperatingModel />
+        <DeliveryJourney />
         <ImplementationRoadmap />
         <PlatformCapabilities />
+        <GtmEnablement />
         <Cta />
       </main>
     </>
