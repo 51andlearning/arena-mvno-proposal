@@ -70,55 +70,146 @@ export const contentArsenal = {
 };
 
 export const productTiers = {
-  eyebrow: "Product Tiers",
-  title: "Three tiers. One ecosystem.",
+  eyebrow: "Mobile Bundles",
+  title: "Three mobile bundles. Fixed allowances. 50%+ gross profit.",
   subtitle:
-    "Each tier bundles connectivity with exclusive Arena content that no other network can offer.",
+    "Transparent, capped bundles priced from wholesale cost. All prices include VAT. No unlimited voice, SMS, or data — margin is protected at every tier.",
+  pricingNote:
+    "Pricing based on wholesale unit costs: R0.38/min voice, R19.67/GB data (bulk tiers scale down), R0.16/SMS, R6.50/mo SIM management. All bundles maintain ≥50% gross profit.",
   tiers: [
     {
       name: "Arena Connect",
       tier: "Entry",
-      price: "From R60/mo",
-      description: "Affordable access with free news",
+      price: "R99/mo",
+      description: "Entry-level mobile access for every South African",
       features: [
-        "Basic voice + data bundle",
-        "Zero-rated TimesLIVE + SowetanLIVE",
-        "1 free Gallo CRBT on activation",
+        "30 voice minutes",
+        "1 GB data",
+        "25 SMS",
         "WhatsApp included",
         "Arena loyalty points on spend",
+        "1 free Gallo CRBT on activation",
       ],
+      margin: "51.7% GP",
       highlight: false,
     },
     {
       name: "Arena Plus",
       tier: "Mid",
-      price: "From R149/mo",
-      description: "Unlimited calls with full media access",
+      price: "R199/mo",
+      description: "Everyday mobile with more voice, more data, more SMS",
       features: [
-        "Unlimited calls + 10GB data",
-        "All Arena digital titles zero-rated",
+        "75 voice minutes",
+        "2 GB data",
+        "75 SMS",
+        "WhatsApp + core apps included",
         "Gallo music streaming channel",
-        "Vuma FM + Rise FM zero-rated",
-        "Monthly CRBT drops from Gallo catalogue",
-        "Priority Arena Events ticket access",
+        "Monthly CRBT drops",
       ],
+      margin: "50.1% GP",
       highlight: true,
     },
     {
       name: "Arena Black",
       tier: "Premium",
-      price: "From R349/mo",
-      description: "Everything. Unlimited. Exclusive.",
+      price: "R349/mo",
+      description: "Premium mobile with bulk voice and data at bulk rates",
       features: [
-        "Unlimited calls + unlimited data",
-        "All Arena content zero-rated",
-        "Business Day TV live streaming",
-        "Exclusive Gallo content drops (pre-release)",
-        "VIP Arena Events access + meet-and-greets",
-        "BusinessLIVE premium subscription included",
-        "Travel eSIM roaming bundles",
+        "150 voice minutes",
+        "5 GB data",
+        "100 SMS",
+        "Exclusive Gallo pre-release drops",
+        "Priority Arena Events ticket access",
+        "Travel eSIM roaming add-on available",
       ],
+      margin: "53.1% GP",
       highlight: false,
+    },
+  ],
+};
+
+export const contentBundles = {
+  eyebrow: "Content Bundles",
+  title: "Add zero-rated content. Keep your data.",
+  subtitle:
+    "Stack any content bundle onto any mobile bundle. All content reading and streaming is reverse-billed — Arena carries the data cost, your subscribers read and watch without burning their data. Each bundle is discounted 10% versus the direct-subscription retail price where applicable.",
+  pricingNote:
+    "Prices include VAT. Reverse-billed data allowances are capped per bundle to protect margin (shown per bundle). All bundles maintain ≥50% gross profit after factoring reverse-billed data cost + content licensing.",
+  bundles: [
+    {
+      name: "The Times",
+      price: "R72/mo",
+      vsRetail: "10% off R80 TimesLIVE retail",
+      reverseBilled: "1 GB zero-rated",
+      description:
+        "TimesLIVE + Sunday Times digital — South Africa's biggest Sunday paper, zero-rated on the Arena network.",
+      margin: "54.1% GP",
+      includes: [
+        "TimesLIVE (all sections)",
+        "Sunday Times digital edition",
+        "TshisaLIVE entertainment",
+        "TimesLIVE Premium articles",
+      ],
+    },
+    {
+      name: "The Business",
+      price: "R116/mo",
+      vsRetail: "10% off R129 BusinessLIVE retail",
+      reverseBilled: "1 GB zero-rated",
+      description:
+        "BusinessLIVE + Business Day + Financial Mail — the full professional and investor news stack.",
+      margin: "50.6% GP",
+      includes: [
+        "BusinessLIVE full site",
+        "Business Day daily edition",
+        "Financial Mail weekly",
+        "Business Times premium",
+      ],
+    },
+    {
+      name: "The Sowetan",
+      price: "R49/mo",
+      vsRetail: "New price — mass market",
+      reverseBilled: "1.5 GB zero-rated",
+      description:
+        "Sowetan + SowetanLIVE — 1.5M+ monthly readers of South Africa's largest mass-market daily.",
+      margin: "53.8% GP",
+      includes: [
+        "SowetanLIVE full site",
+        "Sowetan e-edition",
+        "S Mag lifestyle content",
+        "SowetanLIVE podcasts",
+      ],
+    },
+    {
+      name: "The Herald",
+      price: "R29/mo",
+      vsRetail: "New price — regional",
+      reverseBilled: "0.5 GB zero-rated",
+      description:
+        "HeraldLIVE + DispatchLIVE — Eastern Cape's trusted regional titles, bundled for community subscribers.",
+      margin: "68.8% GP",
+      includes: [
+        "HeraldLIVE (Nelson Mandela Bay)",
+        "DispatchLIVE (East London)",
+        "Local sport and community news",
+        "Sunday Dispatch digital",
+      ],
+    },
+    {
+      name: "Business TV",
+      price: "R199/mo",
+      vsRetail: "New streaming price",
+      reverseBilled: "5 GB streaming zero-rated",
+      description:
+        "Business Day TV live streaming — DStv channel 412 delivered direct to mobile. Zero-rated up to 5 GB per month.",
+      margin: "52.2% GP",
+      includes: [
+        "Business Day TV live stream",
+        "Market opens/closes daily",
+        "Key interviews on-demand",
+        "Replay of flagship shows",
+      ],
     },
   ],
 };
