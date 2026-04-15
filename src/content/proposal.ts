@@ -141,13 +141,13 @@ export const contentBundles = {
   bundles: [
     {
       name: "The Times",
-      price: "R72/mo",
-      vsRetail: "Matches R72 TimesLIVE Premium retail",
-      reverseBilled: "500 MB content zero-rated",
-      mobile: "10 min · 100 MB · 10 SMS",
+      price: "R129/mo",
+      vsRetail: "Anchored on R72 TimesLIVE Premium + 1 GB mobile",
+      reverseBilled: "1 GB content zero-rated",
+      mobile: "15 min · 1 GB · 15 SMS",
       description:
-        "TimesLIVE Premium + Sunday Times digital at retail, plus a small mobile allowance and the full free content suite.",
-      margin: "62.1% GP",
+        "TimesLIVE Premium + Sunday Times digital, 1 GB mobile data, and the full free content suite.",
+      margin: "51.9% GP",
       includes: [
         "TimesLIVE Premium (all sections)",
         "Sunday Times digital edition",
@@ -157,13 +157,13 @@ export const contentBundles = {
     },
     {
       name: "The Business",
-      price: "R116.10/mo",
-      vsRetail: "Matches R116.10 BusinessLIVE retail",
+      price: "R149/mo",
+      vsRetail: "Anchored on R116.10 BusinessLIVE + 1 GB mobile",
       reverseBilled: "1 GB content zero-rated",
-      mobile: "25 min · 400 MB · 25 SMS",
+      mobile: "25 min · 1 GB · 25 SMS",
       description:
-        "BusinessLIVE (Business Day Premium) at retail, plus mobile and the full free content suite.",
-      margin: "52.9% GP",
+        "BusinessLIVE (Business Day Premium), 1 GB mobile data, plus the full free content suite.",
+      margin: "54.2% GP",
       includes: [
         "BusinessLIVE full site",
         "Business Day daily edition",
@@ -173,13 +173,13 @@ export const contentBundles = {
     },
     {
       name: "The Sowetan",
-      price: "R59/mo",
+      price: "R99/mo",
       vsRetail: "Mass-market mobile + free content",
       reverseBilled: "500 MB content zero-rated",
-      mobile: "10 min · 100 MB · 10 SMS",
+      mobile: "10 min · 1 GB · 10 SMS",
       description:
-        "SowetanLIVE is free to access — this bundle covers the mobile portion with zero-rated reading of all Arena free titles.",
-      margin: "53.8% GP",
+        "SowetanLIVE is free — this bundle provides 1 GB mobile data with zero-rated reading of all Arena free titles.",
+      margin: "51.9% GP",
       includes: [
         "SowetanLIVE full site",
         "Sowetan e-edition",
@@ -189,13 +189,13 @@ export const contentBundles = {
     },
     {
       name: "The Herald",
-      price: "R39/mo",
+      price: "R79/mo",
       vsRetail: "Regional mobile + free content",
       reverseBilled: "250 MB content zero-rated",
-      mobile: "5 min · 50 MB · 5 SMS",
+      mobile: "5 min · 1 GB · 5 SMS",
       description:
-        "HeraldLIVE + DispatchLIVE are free — this is a minimal regional mobile bundle with zero-rated local news.",
-      margin: "55.5% GP",
+        "HeraldLIVE + DispatchLIVE are free — minimal regional mobile with 1 GB data and zero-rated local news.",
+      margin: "50.8% GP",
       includes: [
         "HeraldLIVE (Nelson Mandela Bay)",
         "DispatchLIVE (East London)",
@@ -219,6 +219,33 @@ export const contentBundles = {
         "Plus full free content suite",
       ],
     },
+  ],
+};
+
+export const topUps = {
+  eyebrow: "Top-Up Bundles",
+  title: "Standalone top-ups for when you need more.",
+  subtitle:
+    "When customers exceed their bundle allowances, top-up packs keep them connected without moving tier. All top-ups priced at 50%+ gross profit.",
+  data: [
+    { size: "250 MB", price: "R12", margin: "52.9% GP" },
+    { size: "500 MB", price: "R25", margin: "54.8% GP" },
+    { size: "1 GB", price: "R49", margin: "53.8% GP" },
+    { size: "2 GB", price: "R99", margin: "54.3% GP" },
+    { size: "5 GB", price: "R149", margin: "51.6% GP" },
+    { size: "10 GB", price: "R299", margin: "51.7% GP" },
+  ],
+  voice: [
+    { size: "10 min", price: "R9", margin: "51.4% GP" },
+    { size: "30 min", price: "R29", margin: "54.8% GP" },
+    { size: "60 min", price: "R55", margin: "52.3% GP" },
+    { size: "100 min", price: "R89", margin: "50.9% GP" },
+  ],
+  sms: [
+    { size: "20 SMS", price: "R9", margin: "59.1% GP" },
+    { size: "50 SMS", price: "R19", margin: "51.6% GP" },
+    { size: "100 SMS", price: "R39", margin: "52.8% GP" },
+    { size: "200 SMS", price: "R79", margin: "53.4% GP" },
   ],
 };
 
