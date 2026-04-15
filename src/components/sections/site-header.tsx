@@ -4,9 +4,9 @@ import ContactDialog from "@/components/contact-dialog";
 const NAV = [
   { label: "Summary", href: "#executive-summary" },
   { label: "Content", href: "#content-arsenal" },
+  { label: "How We Deliver", href: "#dsg-ecosystem" },
   { label: "Bundles", href: "#product-tiers" },
   { label: "Revenue", href: "#revenue-model" },
-  { label: "How We Deliver", href: "#operating-model" },
   { label: "Next Steps", href: "#next-steps" },
 ];
 
