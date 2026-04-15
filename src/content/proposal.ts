@@ -772,9 +772,9 @@ export const gtmEnablement = {
 
 export const implementationRoadmap = {
   eyebrow: "Implementation Roadmap",
-  title: "From signature to service launch in 16 weeks.",
+  title: "From signature to service launch in 8 weeks.",
   subtitle:
-    "A proven, phased delivery plan. Agile sprint governance, weekly stakeholder reviews, and a dedicated cross-functional team from Digital Mobile's MVNE unit.",
+    "A proven, phased delivery plan — one week per stage. Agile sprint governance, weekly stakeholder reviews, and a dedicated cross-functional team from Digital Mobile's MVNE unit.",
   phases: [
     {
       phase: "Phase 1",
@@ -788,10 +788,10 @@ export const implementationRoadmap = {
     },
     {
       phase: "Phase 2",
-      duration: "Weeks 2–4",
+      duration: "Week 2",
       title: "Requirements & Design",
       activities: [
-        "Detailed business requirements specification",
+        "Business requirements specification",
         "Solution architecture and integration design",
         "Customer journey mapping",
         "DARE model development (Data, App, Revenue, Experience)",
@@ -799,7 +799,7 @@ export const implementationRoadmap = {
     },
     {
       phase: "Phase 3",
-      duration: "Weeks 5–8",
+      duration: "Week 3",
       title: "Platform Configuration",
       activities: [
         "MVNE platform build on Digital Mobile infrastructure",
@@ -810,7 +810,7 @@ export const implementationRoadmap = {
     },
     {
       phase: "Phase 4",
-      duration: "Weeks 9–12",
+      duration: "Week 4",
       title: "Testing & UAT",
       activities: [
         "System integration testing (SIT)",
@@ -821,7 +821,7 @@ export const implementationRoadmap = {
     },
     {
       phase: "Phase 5",
-      duration: "Weeks 13–14",
+      duration: "Week 5",
       title: "Training & Onboarding",
       activities: [
         "Arena marketing, CX, and ops team training",
@@ -831,7 +831,7 @@ export const implementationRoadmap = {
     },
     {
       phase: "Phase 6",
-      duration: "Weeks 15–16",
+      duration: "Week 6",
       title: "Go-Live Preparation",
       activities: [
         "Final data migration",
@@ -842,13 +842,24 @@ export const implementationRoadmap = {
     },
     {
       phase: "Phase 7",
-      duration: "Ongoing",
-      title: "Service Launch & Operate",
+      duration: "Week 7",
+      title: "Service Launch",
       activities: [
         "Commercial launch across Arena channels",
+        "Full-scale subscriber acquisition kicked off",
         "24/7 operations and support by Digital Mobile",
-        "Performance monitoring and CVM optimisation",
-        "Continuous iteration on product and pricing",
+        "Real-time performance monitoring",
+      ],
+    },
+    {
+      phase: "Phase 8",
+      duration: "Week 8",
+      title: "Operate & Optimise",
+      activities: [
+        "Performance review and CVM optimisation",
+        "Iteration on product, pricing, and bundles",
+        "Ongoing campaign activation and measurement",
+        "Quarterly brand review cadence established",
       ],
     },
   ],
