@@ -582,8 +582,7 @@ export const trackRecord = {
     "Digital Mobile / DSG has enabled MVNOs and managed services for some of South Africa's most recognisable brands. The platform, partnerships, and playbook are proven.",
   stats: [
     { value: "13+", label: "Years in MVNO enablement" },
-    { value: "6", label: "African countries delivered" },
-    { value: "100%", label: "MVNO launch success rate" },
+    { value: "Pan African", label: "Services delivered across the continent" },
     { value: "25+", label: "Years DSG group heritage" },
   ],
   mvnoLaunches: [
