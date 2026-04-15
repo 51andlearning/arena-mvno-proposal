@@ -530,6 +530,304 @@ export const dsgEcosystem = {
   ],
 };
 
+export const operatingModel = {
+  eyebrow: "Operating Model",
+  title: "A collaborative three-party model.",
+  subtitle:
+    "Arena focuses on brand, audience, and content. Digital Mobile builds and runs the MVNO. The MNO host provides the network. Each party does what they do best — no capex, no disruption to the existing Arena business.",
+  roles: [
+    {
+      party: "Arena",
+      scope: "Brand, content, audience",
+      icon: "brand",
+      responsibilities: [
+        "Brand ownership and positioning",
+        "Content licensing (news, music, TV)",
+        "Marketing and audience activation",
+        "Customer relationship at the brand level",
+        "Loyalty integration with Arena Events",
+      ],
+    },
+    {
+      party: "Digital Mobile (DSG)",
+      scope: "MVNO platform, operations, VAS",
+      icon: "platform",
+      responsibilities: [
+        "MVNE platform (BSS/OSS/OCS)",
+        "SIM lifecycle, billing, CRM, support",
+        "VAS integration (eSIM, insurance, security)",
+        "Regulatory compliance (RICA/POPIA/ICASA)",
+        "Day-to-day MNO relationship management",
+      ],
+    },
+    {
+      party: "MNO Host",
+      scope: "Network infrastructure",
+      icon: "network",
+      responsibilities: [
+        "Radio access and core network",
+        "Wholesale voice / data / SMS capacity",
+        "National coverage and quality of service",
+        "Roaming and interconnect agreements",
+        "Regulatory relationship with ICASA",
+      ],
+    },
+  ],
+};
+
+export const trackRecord = {
+  eyebrow: "Track Record",
+  title: "13 years. 6 countries. 100% MVNO launch success rate.",
+  subtitle:
+    "Digital Mobile / DSG has enabled MVNOs and managed services for some of South Africa's most recognisable brands. The platform, partnerships, and playbook are proven.",
+  stats: [
+    { value: "13+", label: "Years in MVNO enablement" },
+    { value: "6", label: "African countries delivered" },
+    { value: "100%", label: "MVNO launch success rate" },
+    { value: "25+", label: "Years DSG group heritage" },
+  ],
+  mvnoLaunches: [
+    {
+      name: "DStv Internet",
+      type: "Full MVNO (36+ months live)",
+      description: "MultiChoice-backed MVNO, launched and managed end-to-end on the Digital Mobile platform.",
+    },
+    {
+      name: "AFGRI Connect",
+      type: "Agri-sector MVNO",
+      description: "Enterprise connectivity MVNO serving the agricultural community, with custom PWA enhancements.",
+    },
+    {
+      name: "eMobile",
+      type: "Digital-first MVNO",
+      description: "Data-led MVNO with integrated eSIM and travel connectivity.",
+    },
+    {
+      name: "Digital Mobile",
+      type: "DSG's own MVNO (MVNO Light)",
+      description: "The reference platform Arena would deploy against — already live, already proven.",
+    },
+  ],
+  credentials: [
+    {
+      title: "CEM Awards 2025",
+      description: "Best CX Team in South Africa (CXG with Nando's) · Best Support Service Provider 2025",
+    },
+    {
+      title: "MTN Partner of the Year",
+      description: "Thrive Award 2016 — MTN Group Innovation Partner of the Year, first MVNO integration into EBU",
+    },
+    {
+      title: "Level 2 BBBEE",
+      description: "Contributor status, with proven Enterprise Development via Maharishi Institute partnership",
+    },
+    {
+      title: "Industry Memberships",
+      description: "IAB (Interactive Advertising Bureau), MMA (Mobile Marketing Association), MVNO Nation Africa",
+    },
+  ],
+};
+
+export const implementationRoadmap = {
+  eyebrow: "Implementation Roadmap",
+  title: "From signature to service launch in 16 weeks.",
+  subtitle:
+    "A proven, phased delivery plan. Agile sprint governance, weekly stakeholder reviews, and a dedicated cross-functional team from Digital Mobile's MVNE unit.",
+  phases: [
+    {
+      phase: "Phase 1",
+      duration: "Week 1",
+      title: "Project Kick-off",
+      activities: [
+        "Contract finalisation and governance setup",
+        "Stakeholder alignment across Arena + Digital Mobile + MNO",
+        "Project team mobilisation",
+      ],
+    },
+    {
+      phase: "Phase 2",
+      duration: "Weeks 2–4",
+      title: "Requirements & Design",
+      activities: [
+        "Detailed business requirements specification",
+        "Solution architecture and integration design",
+        "Customer journey mapping",
+        "DARE model development (Data, App, Revenue, Experience)",
+      ],
+    },
+    {
+      phase: "Phase 3",
+      duration: "Weeks 5–8",
+      title: "Platform Configuration",
+      activities: [
+        "MVNE platform build on Digital Mobile infrastructure",
+        "Product catalogue setup (Arena Connect / Plus / Black + content bundles)",
+        "API integration with Arena content systems",
+        "MNO service configuration and SIM ordering",
+      ],
+    },
+    {
+      phase: "Phase 4",
+      duration: "Weeks 9–12",
+      title: "Testing & UAT",
+      activities: [
+        "System integration testing (SIT)",
+        "User acceptance testing (UAT) with Arena teams",
+        "Regulatory compliance validation (RICA, POPIA, ICASA)",
+        "Performance and load testing",
+      ],
+    },
+    {
+      phase: "Phase 5",
+      duration: "Weeks 13–14",
+      title: "Training & Onboarding",
+      activities: [
+        "Arena marketing, CX, and ops team training",
+        "Documentation handover (runbooks, API docs, user guides)",
+        "Agent and distribution channel enablement",
+      ],
+    },
+    {
+      phase: "Phase 6",
+      duration: "Weeks 15–16",
+      title: "Go-Live Preparation",
+      activities: [
+        "Final data migration",
+        "Operational readiness review",
+        "Go-live rehearsals and war-room setup",
+        "Soft launch with pilot subscribers",
+      ],
+    },
+    {
+      phase: "Phase 7",
+      duration: "Ongoing",
+      title: "Service Launch & Operate",
+      activities: [
+        "Commercial launch across Arena channels",
+        "24/7 operations and support by Digital Mobile",
+        "Performance monitoring and CVM optimisation",
+        "Continuous iteration on product and pricing",
+      ],
+    },
+  ],
+};
+
+export const platformCapabilities = {
+  eyebrow: "Platform Capabilities",
+  title: "Everything an MVNO needs — already built.",
+  subtitle:
+    "Digital Mobile's MVNE platform is a proven, production-grade stack. 14 core capability areas, all API-first, all compliant, all live on other MVNOs today.",
+  capabilities: [
+    {
+      icon: "📱",
+      title: "SIM Lifecycle & Provisioning",
+      description: "Bulk/individual provisioning, eSIM + physical, swap/replace/block/port, stock management, multi-channel distribution.",
+    },
+    {
+      icon: "👤",
+      title: "Account Management",
+      description: "Self-service onboarding, multi-SIM linkage, account hierarchies (family/business), delegated admin.",
+    },
+    {
+      icon: "📦",
+      title: "Product & Bundle Management",
+      description: "Fully configurable product catalogue, custom validity, dynamic pricing, loyalty integration.",
+    },
+    {
+      icon: "💳",
+      title: "Activity & Recharge",
+      description: "Real-time balance, auto-renewal, multi-channel recharge (retail/USSD/app/web), Arena payment integration.",
+    },
+    {
+      icon: "🔔",
+      title: "Event & Notification",
+      description: "Real-time SMS/email/push notifications, custom events, CRM and marketing system integration.",
+    },
+    {
+      icon: "🎁",
+      title: "VAS Platform",
+      description: "SMS/MMS, voicemail, OTA device mgmt, WASP gateway, USSD, WhatsApp, airtime advance, loyalty.",
+    },
+    {
+      icon: "💰",
+      title: "Billing & Finance",
+      description: "Converged prepaid/postpaid/subscription, automated invoicing, revenue assurance via MARS, Arena financial integration.",
+    },
+    {
+      icon: "⚖️",
+      title: "Regulatory & Compliance",
+      description: "Full RICA/eRICA, number portability, lawful intercept, ICASA and POPIA compliance, full audit trails.",
+    },
+    {
+      icon: "📊",
+      title: "CRM & Campaigns",
+      description: "Xanite CVM engine, PersAIc AI targeting, segmentation, campaign management, journey orchestration.",
+    },
+    {
+      icon: "🖥️",
+      title: "OSS / BSS",
+      description: "Real-time OCS, NOC with SLA management, Enterprise Product Catalogue, provisioning, performance dashboards.",
+    },
+    {
+      icon: "🛟",
+      title: "Support & Service Desk",
+      description: "24/7 multi-level support via CXG, dispute management, self-service (USSD/app/web), knowledge base.",
+    },
+    {
+      icon: "🌐",
+      title: "Portal Management",
+      description: "Secure role-based admin portals, real-time dashboards, mobile-responsive, white-labelled to Arena brand.",
+    },
+    {
+      icon: "🔗",
+      title: "Integration & APIs",
+      description: "API-first architecture, iPaaS integration platform, PCI-compliant payment flows, open APIs for every service.",
+    },
+    {
+      icon: "🛡️",
+      title: "Security & Resilience",
+      description: "Geo-redundant infrastructure, disaster recovery, regular failover testing, ISO compliance in progress.",
+    },
+  ],
+};
+
+export const commercialModel = {
+  eyebrow: "Commercial Model",
+  title: "Zero upfront. Pure revenue share.",
+  subtitle:
+    "Digital Mobile carries the build. Arena carries the brand. Revenue is split 50/50 on net profit, after a small loan account covers Digital Mobile's build investment.",
+  highlights: [
+    {
+      metric: "R0",
+      label: "Upfront capex from Arena",
+      description: "Digital Mobile carries the full platform build, integration, and launch investment.",
+    },
+    {
+      metric: "50 / 50",
+      label: "Net profit share",
+      description: "After Digital Mobile's build loan account is settled, profit is split equally between Arena and Digital Mobile.",
+    },
+    {
+      metric: "R2M",
+      label: "Advertising value in-kind",
+      description: "Arena commits R2M of in-kind advertising inventory across its media properties to accelerate subscriber acquisition.",
+    },
+    {
+      metric: "300k",
+      label: "Subscriber target (Yr 5)",
+      description: "The platform is sized for rapid scale to 300,000 active subscribers within 5 years of launch.",
+    },
+  ],
+  costStructure: [
+    { item: "MVNO platform deployment", who: "Digital Mobile", cost: "R0 to Arena" },
+    { item: "Monthly platform fee", who: "Digital Mobile", cost: "R75k or R7.50/active sub (higher)" },
+    { item: "Contact centre (CXG)", who: "Digital Mobile", cost: "Managed service" },
+    { item: "SIM cards + Paperless RICA", who: "Digital Mobile", cost: "R20 per SIM activation" },
+    { item: "Logistics (SIM delivery)", who: "Digital Mobile", cost: "R40 per delivery" },
+    { item: "Arena brand + marketing", who: "Arena", cost: "R2M in-kind media value" },
+  ],
+};
+
 export const cta = {
   eyebrow: "Next Steps",
   title: "Ready to build Africa's first content-led MVNO?",

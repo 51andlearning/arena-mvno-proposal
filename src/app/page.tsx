@@ -7,6 +7,9 @@ import VasServices from "@/components/sections/vas-services";
 import PropertyMap from "@/components/sections/property-map";
 import RevenueModel from "@/components/sections/revenue-model";
 import DsgEcosystem from "@/components/sections/dsg-ecosystem";
+import OperatingModel from "@/components/sections/operating-model";
+import ImplementationRoadmap from "@/components/sections/implementation-roadmap";
+import PlatformCapabilities from "@/components/sections/platform-capabilities";
 import Cta from "@/components/sections/cta";
 
 export default function Home() {
@@ -22,6 +25,9 @@ export default function Home() {
         <PropertyMap />
         <RevenueModel />
         <DsgEcosystem />
+        <OperatingModel />
+        <ImplementationRoadmap />
+        <PlatformCapabilities />
         <Cta />
       </main>
     </>

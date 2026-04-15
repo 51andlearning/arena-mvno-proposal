@@ -2,11 +2,11 @@ import Image from "next/image";
 import ContactDialog from "@/components/contact-dialog";
 
 const NAV = [
-  { label: "Executive Summary", href: "#executive-summary" },
-  { label: "Content Arsenal", href: "#content-arsenal" },
-  { label: "Product Tiers", href: "#product-tiers" },
-  { label: "Gallo Music", href: "#gallo-music" },
-  { label: "Revenue Model", href: "#revenue-model" },
+  { label: "Summary", href: "#executive-summary" },
+  { label: "Content", href: "#content-arsenal" },
+  { label: "Bundles", href: "#product-tiers" },
+  { label: "Revenue", href: "#revenue-model" },
+  { label: "How We Deliver", href: "#operating-model" },
   { label: "Next Steps", href: "#next-steps" },
 ];
 
