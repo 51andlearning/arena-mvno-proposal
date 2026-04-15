@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/sections/site-header";
 import ExecutiveSummary from "@/components/sections/executive-summary";
 import ContentArsenal from "@/components/sections/content-arsenal";
+import PropertyMap from "@/components/sections/property-map";
 import DsgEcosystem from "@/components/sections/dsg-ecosystem";
 import OperatingModel from "@/components/sections/operating-model";
 import DeliveryJourney from "@/components/sections/delivery-journey";
@@ -10,7 +11,6 @@ import GtmEnablement from "@/components/sections/gtm-enablement";
 import ProductTiers from "@/components/sections/product-tiers";
 import GalloMusic from "@/components/sections/gallo-music";
 import VasServices from "@/components/sections/vas-services";
-import PropertyMap from "@/components/sections/property-map";
 import RevenueModel from "@/components/sections/revenue-model";
 import Cta from "@/components/sections/cta";
 
@@ -22,6 +22,7 @@ export default function Home() {
         {/* Why */}
         <ExecutiveSummary />
         <ContentArsenal />
+        <PropertyMap />
 
         {/* How we deliver */}
         <DsgEcosystem />
@@ -35,7 +36,6 @@ export default function Home() {
         <ProductTiers />
         <GalloMusic />
         <VasServices />
-        <PropertyMap />
         <RevenueModel />
 
         {/* Next steps */}
