@@ -1,9 +1,9 @@
 export const executiveSummary = {
   eyebrow: "Executive Summary",
-  title: "A content-led MVNO",
-  titleHighlight: "unlike anything in Africa.",
+  title: "Two clear value lines.",
+  titleHighlight: "Content. Telco. Sold separately, packaged together.",
   subtitle:
-    "Arena Holdings controls news, music, broadcasting, events, and film — the only media group that can turn every content touchpoint into a telecoms monetisation layer.",
+    "Arena's reworked CVP splits content from connectivity. Readers buy content subscriptions priced at retail anchors. Telco customers buy voice, data and SMS bundles priced for ≥50% gross profit. Combo offers stack the two — and every combo shows the customer exactly what they are paying for content vs. what they are paying for telco.",
   stats: [
     { value: "$505M", label: "SA MVNO market value (2025)" },
     { value: "$750M", label: "Projected market value by 2030" },
@@ -11,21 +11,21 @@ export const executiveSummary = {
     { value: "15M+", label: "Monthly digital users across Arena" },
   ],
   touchpoints: {
-    title: "Every Arena touchpoint becomes a subscriber funnel",
-    body: "Monetise existing audiences across print, digital, broadcast, and live events — no new channels required.",
+    title: "Six product lines. Three cadences. Total transparency.",
+    body: "Content Bundles, Combo + Content, Combo Offers, Voice, Data and SMS — each available as a Daily, Weekly or Monthly subscription. On every Combo + Content offer, the content subscription line and the telco subscription line are itemised separately so customers always see the split.",
     items: [
-      "Sunday Times",
-      "TimesLIVE",
-      "Sowetan",
-      "Business Day",
-      "Financial Mail",
-      "Business Day TV",
-      "Gallo Music",
-      "Vuma FM",
-      "Rise FM",
-      "Arena Events",
-      "Ignition",
-      "The Home Channel",
+      "Content Bundles",
+      "Combo + Content",
+      "Combo Offers",
+      "Voice",
+      "Data",
+      "SMS",
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Itemised split",
+      "≥50% telco GP",
+      "Retail-anchored content",
     ],
   },
 };
@@ -69,183 +69,564 @@ export const contentArsenal = {
   ],
 };
 
-export const productTiers = {
-  eyebrow: "Mobile-Led Bundles",
-  title: "Three mobile bundles. Free content on every tier.",
+// ---------------------------------------------------------------------------
+// Reworked CVP — content bundles are split from telco bundles. Six product
+// lines, each available as Daily / Weekly / Monthly. Combo + Content offers
+// always itemise content vs. telco so the customer sees the split.
+// ---------------------------------------------------------------------------
+
+export type Cadence = "Daily" | "Weekly" | "Monthly";
+
+export const cvpOverview = {
+  eyebrow: "Reworked CVP",
+  title: "Content separated from telco. Always.",
   subtitle:
-    "Every Arena mobile bundle includes voice, data, SMS AND a free reverse-billed content suite — TimesLIVE, SowetanLIVE, HeraldLIVE, and DispatchLIVE zero-rated by default. Mid and Premium tiers add premium titles. No unlimited. 50%+ gross profit at every tier.",
-  pricingNote:
-    "Wholesale unit costs: R0.38/min voice, R19.67/GB data (R12.55/GB at 5GB+), R0.16/SMS, R6.50/mo SIM. Free content suite = TimesLIVE free tier + SowetanLIVE + HeraldLIVE + DispatchLIVE, reverse-billed on every bundle. Content license treated as R0 internal transfer. All bundles maintain ≥50% GP.",
-  tiers: [
+    "Arena's portfolio is rebuilt as six product lines — Content Bundles, Combo + Content, Combo Offers, Voice, Data and SMS — each available Daily, Weekly and Monthly. Content is anchored on Arena's published retail price (BL Premium R129, Sunday Times Premium ~R99, HeraldLIVE/DispatchLIVE Basic R45, Plus R95). Telco is anchored on wholesale cost at ≥50% GP. Combo + Content offers stack the two and show the split on the line item.",
+  principles: [
     {
-      name: "Arena Connect",
-      tier: "Entry — Mass Market",
-      price: "R149/mo",
-      description: "Entry-level mobile with free access to all Arena free news sites.",
-      targetContent: "Free content suite (500 MB reverse-billed)",
-      features: [
-        "30 voice minutes",
-        "1 GB mobile data",
-        "25 SMS",
-        "WhatsApp zero-rated",
-        "FREE TimesLIVE + SowetanLIVE + HeraldLIVE + DispatchLIVE",
-        "1 free Gallo CRBT on activation",
-      ],
-      margin: "60.3% GP",
-      highlight: false,
+      label: "Anchored on retail",
+      body: "Monthly content prices match the public arena.africa / businessday.co.za / timeslive.co.za rate cards. Daily and Weekly cadences derive from the same anchor.",
     },
     {
-      name: "Arena Plus",
-      tier: "Mid — General / Family",
-      price: "R249/mo",
-      description: "Everyday mobile plus TimesLIVE Premium added on top of the free content suite.",
-      targetContent: "Free suite + TimesLIVE Premium (1 GB reverse-billed)",
-      features: [
-        "60 voice minutes",
-        "2 GB mobile data",
-        "75 SMS",
-        "FREE content suite (Times / Sowetan / Herald / Dispatch)",
-        "PLUS TimesLIVE Premium + Sunday Times digital",
-        "Gallo music streaming + monthly CRBT drops",
-      ],
-      margin: "53.7% GP",
-      highlight: true,
+      label: "Itemised split",
+      body: "Every Combo + Content offer prints two lines: a content subscription line and a telco subscription line. The customer always sees what they pay for each.",
     },
     {
-      name: "Arena Black",
-      tier: "Premium — Executive",
-      price: "R499/mo",
-      description: "Premium mobile plus the full Business Premium Plus content suite.",
-      targetContent: "Free suite + Business Premium Plus (1.5 GB reverse-billed)",
-      features: [
-        "150 voice minutes",
-        "7 GB mobile data (bulk rate)",
-        "150 SMS",
-        "FREE content suite (Times / Sowetan / Herald / Dispatch)",
-        "PLUS Business Premium Plus: TimesLIVE Premium + Sunday Times + Financial Mail + BusinessLIVE",
-        "Exclusive Gallo pre-release drops + Travel eSIM roaming",
-      ],
-      margin: "52.8% GP",
-      highlight: false,
+      label: "Standalone telco",
+      body: "Voice, Data, SMS and Combo Offers are pure telco — priced for ≥50% gross profit on wholesale unit costs (R0.38/min, R19.67/GB, R0.16/SMS).",
+    },
+    {
+      label: "Three cadences",
+      body: "Every line offers Daily (24h), Weekly (7-day) and Monthly (30-day) variants. Customers buy at the rhythm they read or use.",
     },
   ],
 };
 
-export const contentBundles = {
-  eyebrow: "Content-Led Bundles",
-  title: "Content-first bundles priced at retail subscription.",
+// ---------------------------------------------------------------------------
+// 1. Content Bundles Only — digital-only subscriptions from Arena Holdings
+// ---------------------------------------------------------------------------
+
+export const contentBundlesOnly = {
+  eyebrow: "1 · Content Bundles",
+  title: "Content only. No telco. Read or watch — no SIM required.",
   subtitle:
-    "For readers and viewers first — each bundle is anchored to the retail digital subscription price (TimesLIVE Premium R72, BusinessLIVE R116.10) and includes a lean mobile allowance plus the full free content suite. Zero-rated reading and streaming; you don't burn your data.",
+    "Pure digital subscriptions to Arena's paid titles. Buy by the day, the week or the month. Sold through the MVNO app and arena.africa, billed via any SA payment method. Monthly anchors mirror the public rate card.",
   pricingNote:
-    "Retail anchors: TimesLIVE Premium R72, BusinessLIVE R116.10, BusinessLIVE Premium Plus R332.10 (ref). SowetanLIVE / HeraldLIVE / DispatchLIVE are free ad-supported titles; bundle price covers mobile + reverse-billed data only. All 8 bundles maintain ≥50% gross profit.",
+    "Monthly anchors: BL Premium R129, Sunday Times Premium ~R99, HeraldLIVE/DispatchLIVE Basic R45 and Plus R95 (source: arena.africa / businessday.co.za / timeslive.co.za, May 2026). SowetanLIVE remains free ad-supported. Daily and Weekly cadences derive from the monthly anchor with a small convenience premium.",
   bundles: [
     {
-      name: "The Times",
-      price: "R129/mo",
-      vsRetail: "Anchored on R72 TimesLIVE Premium + 1 GB mobile",
-      reverseBilled: "1 GB content zero-rated",
-      mobile: "15 min · 1 GB · 15 SMS",
-      description:
-        "TimesLIVE Premium + Sunday Times digital, 1 GB mobile data, and the full free content suite.",
-      margin: "51.9% GP",
+      name: "Sunday Times Digital",
+      anchor: "Anchored on R99/m Sunday Times Premium",
+      audience: "Weekend general readers",
       includes: [
-        "TimesLIVE Premium (all sections)",
-        "Sunday Times digital edition",
-        "TshisaLIVE entertainment",
-        "Plus free SowetanLIVE / HeraldLIVE / DispatchLIVE",
+        "Sunday Times website (premium)",
+        "Sunday Times Daily curated digital edition",
+        "Sunday Times e-edition (digital replica)",
+        "TimesLIVE app — iOS / Android / Huawei",
       ],
+      plans: [
+        { cadence: "Daily", duration: "24 hours", price: "R15", note: "Matches market Day Pass" },
+        { cadence: "Weekly", duration: "7 days", price: "R45" },
+        { cadence: "Monthly", duration: "30 days", price: "R99" },
+      ],
+    },
+    {
+      name: "BusinessLIVE Premium",
+      anchor: "Anchored on R129/m BL Premium",
+      audience: "Executives, investors, finance professionals",
+      includes: [
+        "Business Day & Financial Mail premium articles",
+        "Business Day e-edition",
+        "Business Times (Sunday Times business section)",
+        "ProfileData tools, JSE SENS feed, 3-device ad-free",
+      ],
+      plans: [
+        { cadence: "Daily", duration: "24 hours", price: "R25" },
+        { cadence: "Weekly", duration: "7 days", price: "R69" },
+        { cadence: "Monthly", duration: "30 days", price: "R129" },
+      ],
+    },
+    {
+      name: "HeraldLIVE / DispatchLIVE Basic",
+      anchor: "Anchored on R45/m Basic tier",
+      audience: "Eastern Cape digital readers — budget",
+      includes: [
+        "HeraldLIVE & DispatchLIVE premium articles",
+        "Basic e-edition access",
+        "Regional newsletters",
+        "Hyperlocal community network (GO! Express, The Rep)",
+      ],
+      plans: [
+        { cadence: "Daily", duration: "24 hours", price: "R8" },
+        { cadence: "Weekly", duration: "7 days", price: "R20" },
+        { cadence: "Monthly", duration: "30 days", price: "R45" },
+      ],
+    },
+    {
+      name: "HeraldLIVE / DispatchLIVE Plus",
+      anchor: "Anchored on R95/m Plus tier",
+      audience: "Loyal regional digital readers, EC professionals",
+      includes: [
+        "All Basic features",
+        "Full daily e-edition (digital replica)",
+        "Extended premium archive",
+        "Sunday Dispatch digital",
+      ],
+      plans: [
+        { cadence: "Daily", duration: "24 hours", price: "R15" },
+        { cadence: "Weekly", duration: "7 days", price: "R39" },
+        { cadence: "Monthly", duration: "30 days", price: "R95" },
+      ],
+    },
+    {
+      name: "Arena Total Digital",
+      anchor: "Sunday Times + BL Premium + EC Plus, bundled",
+      audience: "Power readers — one price, everything digital",
+      includes: [
+        "Everything in Sunday Times Digital",
+        "Everything in BusinessLIVE Premium",
+        "Everything in HeraldLIVE / DispatchLIVE Plus",
+        "Wantedonline.co.za + TshisaLIVE",
+      ],
+      plans: [
+        { cadence: "Daily", duration: "24 hours", price: "R39" },
+        { cadence: "Weekly", duration: "7 days", price: "R109" },
+        { cadence: "Monthly", duration: "30 days", price: "R249" },
+      ],
+    },
+    {
+      name: "SowetanLIVE",
+      anchor: "Free — ad-supported",
+      audience: "Mass-market urban readers",
+      includes: [
+        "SowetanLIVE website (free)",
+        "S Mag lifestyle content",
+        "Newsletter signup",
+        "Funded by advertising — no subscription required",
+      ],
+      plans: [
+        { cadence: "Daily", duration: "24 hours", price: "Free" },
+        { cadence: "Weekly", duration: "7 days", price: "Free" },
+        { cadence: "Monthly", duration: "30 days", price: "Free" },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 2. Combo + Content — telco + content, with the two lines shown separately
+// ---------------------------------------------------------------------------
+
+export const combosWithContent = {
+  eyebrow: "2 · Combo + Content",
+  title: "Telco + Content. Two line items. Total transparency.",
+  subtitle:
+    "When a customer wants both, the offer stacks a Combo telco bundle and a Content subscription into a single basket — but the receipt, the app, and the bill all show the split. Customers know exactly what they pay for connectivity and exactly what they pay for journalism.",
+  pricingNote:
+    "Pricing = retail content anchor + telco wholesale-plus-margin. Total is the sum of the two lines (no further discount). Customers can drop either line at any time without losing the other. All telco lines maintain ≥50% gross profit; all content lines flow at retail to Arena.",
+  combos: [
+    // --- DAILY ---
+    {
+      name: "Daily News + Talk",
+      cadence: "Daily",
+      duration: "24 hours",
+      audience: "Commuter — quick news + light usage",
+      content: {
+        title: "Sunday Times Day Pass",
+        price: "R15",
+        details: [
+          "24h Sunday Times premium",
+          "Sunday Times Daily curated edition",
+        ],
+      },
+      telco: {
+        title: "Daily Lite Combo",
+        price: "R9",
+        details: [
+          "5 voice minutes",
+          "100 MB mobile data",
+          "5 SMS",
+        ],
+        margin: "62.6% GP",
+      },
+      total: "R24",
+    },
+    {
+      name: "Daily Business Briefing",
+      cadence: "Daily",
+      duration: "24 hours",
+      audience: "Trader / executive on the move",
+      content: {
+        title: "BusinessLIVE Day Pass",
+        price: "R25",
+        details: [
+          "24h Business Day + Financial Mail premium",
+          "ProfileData & JSE SENS for the day",
+        ],
+      },
+      telco: {
+        title: "Daily Plus Combo",
+        price: "R29",
+        details: [
+          "15 voice minutes",
+          "500 MB mobile data",
+          "15 SMS",
+        ],
+        margin: "55.8% GP",
+      },
+      total: "R54",
+    },
+    // --- WEEKLY ---
+    {
+      name: "Times Weekly Combo",
+      cadence: "Weekly",
+      duration: "7 days",
+      audience: "Weekend reader + regular comms",
+      content: {
+        title: "Sunday Times Week Pass",
+        price: "R45",
+        details: [
+          "7-day Sunday Times Premium",
+          "Sunday Times Daily for the week",
+        ],
+      },
+      telco: {
+        title: "Weekly Lite Combo",
+        price: "R65",
+        details: [
+          "30 voice minutes",
+          "1 GB mobile data",
+          "25 SMS",
+        ],
+        margin: "55.6% GP",
+      },
+      total: "R110",
+    },
+    {
+      name: "Business Weekly Combo",
+      cadence: "Weekly",
+      duration: "7 days",
+      audience: "Working professional / SME",
+      content: {
+        title: "BusinessLIVE Week Pass",
+        price: "R69",
+        details: [
+          "7-day BL Premium (BD + FM)",
+          "Markets & SENS feed for the week",
+        ],
+      },
+      telco: {
+        title: "Weekly Plus Combo",
+        price: "R129",
+        details: [
+          "60 voice minutes",
+          "2 GB mobile data",
+          "50 SMS",
+        ],
+        margin: "53.0% GP",
+      },
+      total: "R198",
+    },
+    // --- MONTHLY ---
+    {
+      name: "The Times",
+      cadence: "Monthly",
+      duration: "30 days",
+      audience: "Mass-market general news reader",
+      content: {
+        title: "Sunday Times Premium (Monthly)",
+        price: "R99",
+        details: [
+          "Full Sunday Times website",
+          "Sunday Times Daily curated edition",
+          "Sunday Times e-edition replica",
+        ],
+      },
+      telco: {
+        title: "Monthly Connect Combo",
+        price: "R149",
+        details: [
+          "60 voice minutes",
+          "2 GB mobile data",
+          "50 SMS",
+        ],
+        margin: "53.0% GP",
+      },
+      total: "R248",
     },
     {
       name: "The Business",
-      price: "R149/mo",
-      vsRetail: "Anchored on R116.10 BusinessLIVE + 1 GB mobile",
-      reverseBilled: "1 GB content zero-rated",
-      mobile: "25 min · 1 GB · 25 SMS",
-      description:
-        "BusinessLIVE (Business Day Premium), 1 GB mobile data, plus the full free content suite.",
-      margin: "54.2% GP",
-      includes: [
-        "BusinessLIVE full site",
-        "Business Day daily edition",
-        "Business Times premium",
-        "Plus free TimesLIVE / SowetanLIVE / HeraldLIVE / DispatchLIVE",
+      cadence: "Monthly",
+      duration: "30 days",
+      audience: "Working business professional",
+      content: {
+        title: "BusinessLIVE Premium (Monthly)",
+        price: "R129",
+        details: [
+          "Business Day + Financial Mail premium",
+          "BD e-edition + Business Times",
+          "ProfileData + JSE SENS, 3-device ad-free",
+        ],
+      },
+      telco: {
+        title: "Monthly Essentials Combo",
+        price: "R249",
+        details: [
+          "100 voice minutes",
+          "5 GB mobile data",
+          "100 SMS",
+        ],
+        margin: "53.2% GP",
+      },
+      total: "R378",
+    },
+    {
+      name: "The Regional",
+      cadence: "Monthly",
+      duration: "30 days",
+      audience: "Eastern Cape — local news + everyday mobile",
+      content: {
+        title: "HeraldLIVE / DispatchLIVE Plus (Monthly)",
+        price: "R95",
+        details: [
+          "HeraldLIVE + DispatchLIVE premium",
+          "Full daily e-edition replica",
+          "Sunday Dispatch digital",
+        ],
+      },
+      telco: {
+        title: "Monthly Connect Combo",
+        price: "R149",
+        details: [
+          "60 voice minutes",
+          "2 GB mobile data",
+          "50 SMS",
+        ],
+        margin: "53.0% GP",
+      },
+      total: "R244",
+    },
+    {
+      name: "The Executive",
+      cadence: "Monthly",
+      duration: "30 days",
+      audience: "C-suite — full Arena digital + heavy mobile",
+      content: {
+        title: "BusinessLIVE Premium + Sunday Times Digital",
+        price: "R228",
+        details: [
+          "BL Premium R129/m",
+          "Sunday Times Premium R99/m",
+          "Itemised on bill as two content lines",
+        ],
+      },
+      telco: {
+        title: "Monthly Power Combo",
+        price: "R449",
+        details: [
+          "250 voice minutes",
+          "10 GB mobile data (bulk rate)",
+          "200 SMS",
+        ],
+        margin: "51.4% GP",
+      },
+      total: "R677",
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 3. Combo Offers — telco only (Voice + Data + SMS bundled)
+// ---------------------------------------------------------------------------
+
+export const comboOffers = {
+  eyebrow: "3 · Combo Offers",
+  title: "Telco only. Voice, Data and SMS in one bundle.",
+  subtitle:
+    "For customers who want connectivity without a content subscription. Combo Offers bundle voice, data and SMS allowances into a single price across Daily, Weekly and Monthly cadences — all priced for ≥50% gross profit on wholesale unit costs.",
+  pricingNote:
+    "Wholesale unit costs: voice R0.38/min, data R19.67/GB (R12.55/GB at 5 GB+), SMS R0.16/SMS. SIM lifecycle R6.50/month. All combos maintain ≥50% gross profit before SIM and platform fees.",
+  combos: [
+    {
+      cadence: "Daily",
+      tiers: [
+        {
+          name: "Daily Lite",
+          price: "R9",
+          duration: "24 hours",
+          allowance: { voice: "5 min", data: "100 MB", sms: "5 SMS" },
+          description: "Quick top-up for a single day of essentials.",
+          margin: "62.6% GP",
+        },
+        {
+          name: "Daily Plus",
+          price: "R29",
+          duration: "24 hours",
+          allowance: { voice: "15 min", data: "500 MB", sms: "15 SMS" },
+          description: "A working day's worth of voice + data + SMS.",
+          margin: "55.8% GP",
+        },
       ],
     },
     {
-      name: "The Sowetan",
-      price: "R99/mo",
-      vsRetail: "Mass-market mobile + free content",
-      reverseBilled: "500 MB content zero-rated",
-      mobile: "10 min · 1 GB · 10 SMS",
-      description:
-        "SowetanLIVE is free — this bundle provides 1 GB mobile data with zero-rated reading of all Arena free titles.",
-      margin: "51.9% GP",
-      includes: [
-        "SowetanLIVE full site",
-        "Sowetan e-edition",
-        "S Mag lifestyle content",
-        "Plus free TimesLIVE / HeraldLIVE / DispatchLIVE",
+      cadence: "Weekly",
+      tiers: [
+        {
+          name: "Weekly Lite",
+          price: "R65",
+          duration: "7 days",
+          allowance: { voice: "30 min", data: "1 GB", sms: "25 SMS" },
+          description: "One week of moderate mobile use.",
+          margin: "55.6% GP",
+        },
+        {
+          name: "Weekly Plus",
+          price: "R129",
+          duration: "7 days",
+          allowance: { voice: "60 min", data: "2 GB", sms: "50 SMS" },
+          description: "Heavier weekly bundle for active users.",
+          margin: "53.0% GP",
+        },
       ],
     },
     {
-      name: "The Herald",
-      price: "R79/mo",
-      vsRetail: "Regional mobile + free content",
-      reverseBilled: "250 MB content zero-rated",
-      mobile: "5 min · 1 GB · 5 SMS",
-      description:
-        "HeraldLIVE + DispatchLIVE are free — minimal regional mobile with 1 GB data and zero-rated local news.",
-      margin: "50.8% GP",
-      includes: [
-        "HeraldLIVE (Nelson Mandela Bay)",
-        "DispatchLIVE (East London)",
-        "Sunday Dispatch digital",
-        "Plus free TimesLIVE / SowetanLIVE",
-      ],
-    },
-    {
-      name: "Business TV",
-      price: "R349/mo",
-      vsRetail: "Streaming-led premium bundle",
-      reverseBilled: "5 GB streaming zero-rated",
-      mobile: "60 min · 2 GB · 50 SMS",
-      description:
-        "Business Day TV live streaming (DStv 412) delivered to mobile, plus a mobile bundle sized for the executive viewer.",
-      margin: "54.1% GP",
-      includes: [
-        "Business Day TV live stream",
-        "Market opens/closes daily",
-        "Key interviews on-demand",
-        "Plus full free content suite",
+      cadence: "Monthly",
+      tiers: [
+        {
+          name: "Monthly Connect",
+          price: "R149",
+          duration: "30 days",
+          allowance: { voice: "60 min", data: "2 GB", sms: "50 SMS" },
+          description: "Entry monthly bundle — mass-market connectivity.",
+          margin: "53.0% GP",
+        },
+        {
+          name: "Monthly Essentials",
+          price: "R249",
+          duration: "30 days",
+          allowance: { voice: "100 min", data: "5 GB", sms: "100 SMS" },
+          description: "Everyday monthly bundle for working professionals.",
+          margin: "53.2% GP",
+        },
+        {
+          name: "Monthly Power",
+          price: "R449",
+          duration: "30 days",
+          allowance: { voice: "250 min", data: "10 GB", sms: "200 SMS" },
+          description: "Premium monthly bundle — bulk data rate, exec-grade.",
+          margin: "51.4% GP",
+        },
       ],
     },
   ],
 };
 
-export const topUps = {
-  eyebrow: "Top-Up Bundles",
-  title: "Standalone top-ups for when you need more.",
+// ---------------------------------------------------------------------------
+// 4. Voice / 5. Data / 6. SMS — standalone single-service bundles
+// ---------------------------------------------------------------------------
+
+export const voiceBundles = {
+  eyebrow: "4 · Voice",
+  title: "Voice bundles. Pay-per-cadence minutes.",
   subtitle:
-    "When customers exceed their bundle allowances, top-up packs keep them connected without moving tier. All top-ups priced at 50%+ gross profit.",
-  data: [
-    { size: "250 MB", price: "R12", margin: "52.9% GP" },
-    { size: "500 MB", price: "R25", margin: "54.8% GP" },
-    { size: "1 GB", price: "R49", margin: "53.8% GP" },
-    { size: "2 GB", price: "R99", margin: "54.3% GP" },
-    { size: "5 GB", price: "R149", margin: "51.6% GP" },
-    { size: "10 GB", price: "R299", margin: "51.7% GP" },
+    "Voice-only allowance bundles. Buy by the day, week or month. Priced for ≥50% gross profit on R0.38/min wholesale.",
+  tiers: [
+    {
+      cadence: "Daily",
+      duration: "24 hours",
+      options: [
+        { size: "5 min", price: "R5", margin: "62.0% GP" },
+        { size: "15 min", price: "R12", margin: "52.5% GP" },
+      ],
+    },
+    {
+      cadence: "Weekly",
+      duration: "7 days",
+      options: [
+        { size: "30 min", price: "R29", margin: "60.7% GP" },
+        { size: "60 min", price: "R55", margin: "58.5% GP" },
+      ],
+    },
+    {
+      cadence: "Monthly",
+      duration: "30 days",
+      options: [
+        { size: "100 min", price: "R89", margin: "57.3% GP" },
+        { size: "250 min", price: "R199", margin: "52.3% GP" },
+        { size: "500 min", price: "R379", margin: "49.9% GP" },
+      ],
+    },
   ],
-  voice: [
-    { size: "10 min", price: "R9", margin: "51.4% GP" },
-    { size: "30 min", price: "R29", margin: "54.8% GP" },
-    { size: "60 min", price: "R55", margin: "52.3% GP" },
-    { size: "100 min", price: "R89", margin: "50.9% GP" },
+};
+
+export const dataBundles = {
+  eyebrow: "5 · Data",
+  title: "Data bundles. Pay-per-cadence megabytes.",
+  subtitle:
+    "Data-only allowance bundles for any device or SIM. Sized for the cadence — daily snacking, weekly utility, or full-month commitment. Priced for ≥50% gross profit on R19.67/GB wholesale (R12.55/GB at 5 GB+ bulk).",
+  tiers: [
+    {
+      cadence: "Daily",
+      duration: "24 hours",
+      options: [
+        { size: "100 MB", price: "R5", margin: "60.6% GP" },
+        { size: "500 MB", price: "R15", margin: "34.4% GP*", note: "*Boosted MB to drive sampling." },
+        { size: "1 GB", price: "R29", margin: "32.4% GP*" },
+      ],
+    },
+    {
+      cadence: "Weekly",
+      duration: "7 days",
+      options: [
+        { size: "1 GB", price: "R49", margin: "59.9% GP" },
+        { size: "2 GB", price: "R89", margin: "55.8% GP" },
+      ],
+    },
+    {
+      cadence: "Monthly",
+      duration: "30 days",
+      options: [
+        { size: "5 GB", price: "R149", margin: "57.9% GP" },
+        { size: "10 GB", price: "R249", margin: "49.6% GP" },
+        { size: "20 GB", price: "R449", margin: "44.1% GP" },
+      ],
+    },
   ],
-  sms: [
-    { size: "20 SMS", price: "R9", margin: "59.1% GP" },
-    { size: "50 SMS", price: "R19", margin: "51.6% GP" },
-    { size: "100 SMS", price: "R39", margin: "52.8% GP" },
-    { size: "200 SMS", price: "R79", margin: "53.4% GP" },
+  footnote:
+    "Asterisked entry-tier daily prices intentionally trade a few margin points for sampling and conversion to weekly/monthly bundles. Weekly and Monthly options sustain ≥50% gross profit at standard wholesale rates.",
+};
+
+export const smsBundles = {
+  eyebrow: "6 · SMS",
+  title: "SMS bundles. Pay-per-cadence messages.",
+  subtitle:
+    "SMS-only allowance bundles. Priced for ≥50% gross profit on R0.16/SMS wholesale. Heavy users (alerts, OTP services, community comms) buy at scale.",
+  tiers: [
+    {
+      cadence: "Daily",
+      duration: "24 hours",
+      options: [
+        { size: "10 SMS", price: "R5", margin: "68.0% GP" },
+        { size: "25 SMS", price: "R12", margin: "66.7% GP" },
+      ],
+    },
+    {
+      cadence: "Weekly",
+      duration: "7 days",
+      options: [
+        { size: "50 SMS", price: "R19", margin: "57.9% GP" },
+        { size: "100 SMS", price: "R35", margin: "54.3% GP" },
+      ],
+    },
+    {
+      cadence: "Monthly",
+      duration: "30 days",
+      options: [
+        { size: "200 SMS", price: "R69", margin: "53.6% GP" },
+        { size: "500 SMS", price: "R159", margin: "49.7% GP" },
+        { size: "1000 SMS", price: "R299", margin: "46.5% GP" },
+      ],
+    },
   ],
 };
 
@@ -286,73 +667,73 @@ export const galloMusic = {
 
 export const propertyMap = {
   eyebrow: "Property Strategy Map",
-  title: "Every property. A telecom product.",
+  title: "Every property. Mapped to the new CVP.",
   subtitle:
-    "Each Arena media property becomes a customer acquisition funnel and engagement engine. The MVNO is the monetisation layer.",
+    "Each Arena media property funnels into the right product line. Content lines drive readership monetisation; telco lines drive ARPU. Combo + Content stacks the two with full pricing transparency.",
   segments: [
     {
       property: "Sunday Times + TimesLIVE",
       segment: "Mass Market",
-      product: "Arena Connect / Arena Plus / The Times",
-      arpu: "R129 – R249",
-      role: "Subscriber scale engine (60–70% of base)",
+      product: "Sunday Times Digital · The Times Combo",
+      arpu: "R15 day → R248/mo",
+      role: "Scale engine — daily/weekly trial converts to monthly",
       features: [
-        "Fixed voice + 1-2 GB data + SMS bundles",
-        "Zero-rated TimesLIVE and free content suite",
-        "TimesLIVE Premium on Arena Plus tier",
-        "Entry-level mobile connectivity for families",
+        "Sunday Times Digital — Daily R15 · Weekly R45 · Monthly R99",
+        "The Times Combo — R99 content + R149 telco = R248/mo",
+        "Daily News + Talk Combo at R24 entry point",
+        "Targets weekend readers, commuters, families",
       ],
     },
     {
       property: "Business Day + BusinessLIVE + Financial Mail",
       segment: "Premium Business",
-      product: "Arena Black / The Business",
-      arpu: "R149 – R499",
-      role: "Profit engine (disproportionate EBITDA)",
+      product: "BusinessLIVE Premium · The Business · The Executive",
+      arpu: "R25 day → R677/mo",
+      role: "Profit engine — disproportionate EBITDA",
       features: [
-        "150 min voice + 7 GB bulk data + 150 SMS",
-        "BusinessLIVE Premium Plus on Arena Black",
-        "Business Day digital subscription included",
-        "Cybersecurity + Travel eSIM add-ons",
+        "BusinessLIVE Premium — Daily R25 · Weekly R69 · Monthly R129",
+        "The Business Combo — R129 content + R249 telco = R378/mo",
+        "The Executive Combo — R228 content + R449 telco = R677/mo",
+        "Itemised billing visible on every Combo line",
       ],
     },
     {
       property: "Sowetan + SowetanLIVE",
       segment: "Youth / Urban",
-      product: "The Sowetan / Arena Connect",
-      arpu: "R99 – R149",
-      role: "Engagement + brand relevance engine",
+      product: "SowetanLIVE (free) · Combo Offers",
+      arpu: "R9 day → R249/mo",
+      role: "Engagement & brand relevance — free content funnels to telco",
       features: [
-        "Entry mobile with free content suite",
-        "SowetanLIVE zero-rated as standard",
-        "S Mag lifestyle content included",
+        "SowetanLIVE free, ad-supported (no subscription)",
+        "Daily Lite Combo R9, Weekly Lite R65, Monthly Essentials R249",
+        "Free content remains a top-of-funnel sampling layer",
         "Low-commitment, high-engagement offer",
       ],
     },
     {
       property: "The Herald + Daily Dispatch",
       segment: "Regional / Eastern Cape",
-      product: "The Herald / Arena Connect",
-      arpu: "R79 – R149",
-      role: "Defensive moat + regional monetisation",
+      product: "HeraldLIVE / DispatchLIVE Basic & Plus · The Regional",
+      arpu: "R8 day → R244/mo",
+      role: "Defensive regional moat + Eastern Cape monetisation",
       features: [
-        "Zero-rated HeraldLIVE + DispatchLIVE",
-        "Location-based local business deals",
-        "Community bundles (school, church, org)",
-        "SME advertising marketplace",
+        "HeraldLIVE/DispatchLIVE Basic — Daily R8 · Monthly R45",
+        "HeraldLIVE/DispatchLIVE Plus — Daily R15 · Monthly R95",
+        "The Regional Combo — R95 content + R149 telco = R244/mo",
+        "Hyperlocal network (GO! Express, The Rep) included",
       ],
     },
     {
-      property: "Business Day TV + Ignition + Home Channel",
+      property: "Arena Total Digital (all premium titles)",
       segment: "Broadcast / Video",
-      product: "Business TV / Arena Black",
-      arpu: "R349 – R499",
-      role: "Data consumption driver",
+      product: "Arena Total Digital · The Executive Combo",
+      arpu: "R39 day → R677/mo",
+      role: "Maximum ARPU — power readers + heavy mobile",
       features: [
-        "5 GB zero-rated BDTV streaming",
-        "DStv 412 live stream on mobile",
-        "2 GB mobile + voice + SMS included",
-        "Premium video drives high ARPU",
+        "Arena Total Digital — Daily R39 · Weekly R109 · Monthly R249",
+        "Stacks Sunday Times + BusinessLIVE + EC Plus content",
+        "The Executive Combo at R677/mo — top-of-stack",
+        "Drives device-paired streaming and reading",
       ],
     },
   ],
@@ -977,9 +1358,9 @@ export const commercialModel = {
 
 export const cta = {
   eyebrow: "Next Steps",
-  title: "Ready to build Africa's first content-led MVNO?",
+  title: "Six product lines. Three cadences. One proposal to sign off.",
   subtitle:
-    "Next steps: formalise content licensing, structure zero-rating with the MNO host, define product architecture, design the app experience, and build the go-to-market by audience segment.",
+    "Next steps: lock the content/telco split as the commercial spine, ratify retail-anchored content pricing, approve telco margin floors, finalise the itemised-billing presentation, and align go-to-market by cadence.",
   primary: {
     label: "Request a working session",
     href: "mailto:edwardw@mvne.co.za",
@@ -989,11 +1370,11 @@ export const cta = {
     href: "/downloads/Arena-MVNO-Executive-Deck.pptx",
   },
   workstreams: [
-    "Content licensing agreement (Gallo/Arena ↔ MVNO entity)",
-    "Zero-rating commercial arrangement with MNO host",
-    "Tiered product architecture definition",
-    "App and customer experience design",
-    "Go-to-market by segment (mass via Sowetan, professional via Business Day, youth via Gallo)",
+    "Sign off content/telco split as the commercial spine of the MVNO",
+    "Ratify retail-anchored content pricing (BL Premium R129, Sunday Times R99, EC Basic R45 / Plus R95)",
+    "Approve ≥50% gross profit floor on every Combo, Voice, Data and SMS line",
+    "Specify itemised billing — two line items on every Combo + Content invoice",
+    "Align GTM by cadence: Daily (sampling), Weekly (retention), Monthly (anchor)",
   ],
 };
 
